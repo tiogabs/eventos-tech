@@ -1,6 +1,6 @@
 package com.eventostech.api.domain.address;
 
-import com.eventostech.api.domain.event.Event;
+import com.eventostech.api.domain.events.Events;
 import jakarta.persistence.*;
 
 import java.util.UUID;
@@ -21,5 +21,5 @@ public class Address {
 
     @ManyToOne
     @JoinColumn(name = "event_id")
-    private Event event;
+    private Events events;
 }

@@ -1,4 +1,4 @@
-package com.eventostech.api.domain.event;
+package com.eventostech.api.domain.events;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,7 +19,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class Event {
+public class Events {
 
     @Id
     @GeneratedValue

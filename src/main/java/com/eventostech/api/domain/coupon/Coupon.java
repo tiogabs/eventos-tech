@@ -1,6 +1,6 @@
 package com.eventostech.api.domain.coupon;
 
-import com.eventostech.api.domain.event.Event;
+import com.eventostech.api.domain.events.Events;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -29,5 +29,5 @@ public class Coupon {
 
     @ManyToOne
     @JoinColumn(name = "event_id")
-    private Event event;
+    private Events events;
 }
